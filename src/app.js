@@ -17,9 +17,8 @@ const homeRoutes = require("./routes/homeRoutes.js")
 const productRoutes = require("./routes/productsRoutes.js");
 
 
-app.listen(3030,() =>{
-    console.log("Servidor corriendo en puerto 3000");
-});
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Servidor funcionando en el puerto " + process.env.PORT));
 
 app.use('/editProduct',productRoutes);
 app.use('editProduct/:id',productRoutes);
