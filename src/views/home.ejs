@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <%- include ("./partials/head.ejs")  %> 
+
+   
+    </head>
+    <body>
+    <header>     
+        <%- include ("./partials/header.ejs")%>
+    </header>
+
+        
+        
+        <section class="banner">
+            <img src="images/libros.jpeg" alt="Banner de ofertas">
+        </section>
+
+        <main>
+
+            <section class="primaria">
+                <h2>Eduación primaria</h2>
+                <div class="products-list">
+                    <article class="product">
+                        <a href="/productDetail"><img src="/images/cienciasNaturales.jpeg" alt="Ciencias Naturales"></a>
+                        <div class="product__info">
+                            <p class="price">$3000</p>
+                            <h3>Ciencias Naturales</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/cienciasSociales.jpeg" alt="Ciencias Sociales">
+                        <div class="product__info">
+                            <p class="price">$2500</p>
+                            <h3>Ciencias Sociales 6</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/matematica1.jpeg" alt="Matemática 1">
+                        <div class="product__info">
+                            <p class="price">$3500</p>
+                            <h3>Matemática I</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/practicas-lenguaje1.jpeg" alt="Lengua y literatura I">
+                        <div class="product__info">
+                            <p class="price">$3300</p>
+                            <h3>Lengua y literatura I</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="secundaria">
+                <h2>Educación secundaria</h2>
+                <div class="products-list">
+                    <article class="product">
+                        <img src="/images/biologia1.webp" alt="Biología">
+                        <div class="product__info">
+                            <p class="price">$3770</p>
+                            <h3>Biología</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/fisica1.jpeg" alt="Física">
+                        <div class="product__info">
+                            <p class="price">$5300</p>
+                            <h3>Manual de Física Elemental</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/ingles.jpeg" alt="inglés">
+                        <div class="product__info">
+                            <p class="price">$4500</p>
+                            <h3>Cambridge IGCSE - English</h3>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <img src="/images/matematica2.webp" alt="matematicas2">
+                        <div class="product__info">
+                            <p class="price">$5300</p>
+                            <h3>Matemática II</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        
+        <%- include ("./partials/footer.ejs")%>
+    </footer>
+    </body>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Librería Kodos - Carro de Compras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/889c1cc427.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="product-cart-section">
+        <section class="product-cart">        
+            <section class="up-section-cart">
+                <a href="/"><button type="button" class="product-cart-button"><i class="fa-solid fa-angle-left"></i></button></a>
+                <h3 class="up-section-cart__title">Carrito de compras</h3>
+            </section>
+
+            <section class="product-subtotal">
+                <small>PRODUCTO</small>
+                <small>SUBTOTAL</small>
+            </section>
+
+            <section class="product-cart-content">
+                <div class="product-cart-content-left">
+                    <div class="product-cart-content__image">
+                        <img src="/images/cienciasNaturales.jpeg" alt="Product images">
+                    </div>
+                    <div class="product-cart-content__amount">
+                        <p class="product-cart-content__amount__title">Ciencias Naturales</p>
+
+                        
+                        <div class="product-cart-content__buttons">
+                            <button type="button" class="product-cart-button"><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" name="product-cart-amount" min="1" >
+                            <button type="button" class="product-cart-button"><i class="fa-solid fa-plus"></i></button>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cart-content-trash-price">
+                    <div>
+                        <button type="button" class="up-section-cart__trash"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                    <div>
+                        <p class="product-cart-content__price">$3000</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="product-cart-subtotal">
+            <h3>Subtotal (sin envío):</h3>
+            <h3 class="product-cart-subtotal__price">$3000</h3>
+        </section>
+
+        <section class="product-cart-shipping">
+            <div class="product-cart-send">
+                <i class="fas fa-truck"></i>
+                <p>Medios de envío</p>
+            </div>
+
+            <div class="product-cart-form">
+                <form>            
+                    <div class="product-cart-form-input">
+                        <input type="text" placeholder="Tu codigo postal">
+                        <input type="submit" value="Calcular">
+                    </div>
+                    <a href="https://www.correoargentino.com.ar/formularios/cpa"><small>No sé mi código postal</small></a>
+                </form>
+            </div>
+        </section>
+
+        <section class="product-cart-total">
+            <h2>TOTAL:</h2>
+            <h3 class="product-cart-subtotal__price">$3000</h3>        
+        </section>
+        <div class="product-cart-purchase-end">
+            <div class="product-cart-purchase">
+                <input type="submit" value="INICIAR COMPRA">
+            </div>
+            <div class="product-cart-home">
+                <a href="/"><small>VER MÁS PRODUCTOS</small></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
